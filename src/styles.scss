@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:       #050508;
+  --bg2:      #0A0A12;
+  --bg3:      #0F0F1A;
+  --border:   rgba(255,255,255,0.06);
+  --border2:  rgba(108,99,255,0.2);
+  --muted:    #4A4A6A;
+  --muted2:   #8A8AAA;
+  --white:    #EEEEFF;
+  --indigo:   #6C63FF;
+  --indigo2:  #9D97FF;
+  --teal:     #00FFD1;
+  --teal2:    #00D4AA;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  overflow-x: hidden;
+  /* cursor: none; */  // ← comenta esto por ahora
+}
+
+// a { cursor: none; }  // ← también este

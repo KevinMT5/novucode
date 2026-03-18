@@ -1,1 +1,24 @@
-<p>navbar works!</p>
+<nav [class.scrolled]="scrolled">
+  <a href="#" class="logo">
+    <div class="logo-mark">NC</div>
+    <div class="logo-text">Novu<span>Code</span></div>
+  </a>
+
+  <ul class="nav-links" [class.open]="menuOpen">
+    <li><a href="#servicios" (click)="menuOpen=false">Servicios</a></li>
+    <li><a href="#nosotros" (click)="menuOpen=false">Nosotros</a></li>
+    <li><a href="#clientes" (click)="menuOpen=false">Clientes</a></li>
+    <li><a href="#proceso" (click)="menuOpen=false">Proceso</a></li>
+    <li class="mobile-cta">
+      <a href="#contacto" class="nav-btn" (click)="menuOpen=false">Hablemos →</a>
+    </li>
+  </ul>
+
+  <a href="#contacto" class="nav-btn desktop-cta">Hablemos →</a>
+
+  <button class="burger" (click)="toggleMenu()" [class.active]="menuOpen">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
