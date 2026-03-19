@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,37 +7,27 @@
 }
 
 :root {
-  --bg:       #050508;
-  --bg2:      #0A0A12;
-  --bg3:      #0F0F1A;
-  --border:   rgba(255,255,255,0.06);
-  --border2:  rgba(108,99,255,0.2);
-  --muted:    #4A4A6A;
-  --muted2:   #8A8AAA;
-  --white:    #EEEEFF;
-  --indigo:   #6C63FF;
-  --indigo2:  #9D97FF;
-  --teal:     #00FFD1;
-  --teal2:    #00D4AA;
+  --purple:      #6B21D6;
+  --purple-dark: #4A0F9E;
+  --purple-light:#EDE9FF;
+  --orange:      #EF6A17;
+  --orange-dark: #CC5510;
+  --dark:        #233036;
+  --dark2:       #1A2428;
+  --gray:        #DBDCDC;
+  --gray2:       #F5F5F5;
+  --white:       #FFFFFF;
+  --border:      rgba(255,255,255,0.08);
+  --border2:     rgba(107,33,214,0.25);
+  --muted:       #8A8A9A;
+  --muted2:      #B0B0C0;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
-  background: var(--bg);
+  font-family: 'Montserrat', sans-serif;
+  background: var(--dark);
   color: var(--white);
   overflow-x: hidden;
-  cursor: none;
 }
-
-
-body {
-  font-family: 'Space Grotesk', sans-serif;
-  background: var(--bg);
-  color: var(--white);
-  overflow-x: hidden;
-  /* cursor: none; */  // ← comenta esto por ahora
-}
-
-// a { cursor: none; }  // ← también este

@@ -1,8 +1,8 @@
 <nav [class.scrolled]="scrolled">
   <a href="#" class="logo">
-    <div class="logo-mark">NC</div>
-    <div class="logo-text">Novu<span>Code</span></div>
-  </a>
+  <img src="logo.svg" alt="NovuCode isotipo" class="logo-icon">
+  <img src="letraslogo.svg" alt="NovuCode" class="logo-text-img">
+</a>
 
   <ul class="nav-links" [class.open]="menuOpen">
     <li><a href="#servicios" (click)="menuOpen=false">Servicios</a></li>
@@ -17,8 +17,6 @@
   <a href="#contacto" class="nav-btn desktop-cta">Hablemos →</a>
 
   <button class="burger" (click)="toggleMenu()" [class.active]="menuOpen">
-    <span></span>
-    <span></span>
-    <span></span>
+    <span></span><span></span><span></span>
   </button>
 </nav>

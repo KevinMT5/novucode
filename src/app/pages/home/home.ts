@@ -6,11 +6,14 @@ import { Hero } from '../../components/hero/hero';
 import { Nosotros } from '../../components/nosotros/nosotros';
 import { Proceso } from '../../components/proceso/proceso';
 import { Servicios } from '../../components/servicios/servicios';
+import { Marquee } from '../../components/marquee/marquee';
+
 
 @Component({
   selector: 'app-home',
   imports: [
     Hero,
+    Marquee,
     Servicios,
     Nosotros,
     Clientes,
