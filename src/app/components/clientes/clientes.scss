@@ -1,0 +1,121 @@
+.clientes {
+  padding: 120px 64px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.cl-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: end;
+  margin-bottom: 64px;
+}
+
+.s-label {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--orange); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 12px;
+
+  &::before {
+    content: '';
+    width: 24px; height: 2px;
+    background: var(--orange);
+  }
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 900; line-height: 1.0;
+  letter-spacing: -.03em;
+  .highlight { color: var(--orange); }
+}
+
+.cl-desc {
+  font-size: 16px; color: var(--muted2);
+  line-height: 1.8;
+}
+
+.cl-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.06);
+}
+
+.cl-card {
+  background: var(--dark);
+  padding: 44px 36px;
+  transition: background .2s;
+
+  &:hover { background: var(--dark2); }
+
+  &.featured {
+    border-top: 3px solid var(--orange);
+  }
+
+  &.empty {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    min-height: 200px; cursor: pointer;
+  }
+}
+
+.cl-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px; font-weight: 800;
+  color: var(--white); margin-bottom: 8px;
+}
+
+.cl-sector {
+  font-size: 12px; color: var(--muted);
+  letter-spacing: .06em; text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.cl-services {
+  display: flex; gap: 8px;
+  flex-wrap: wrap; margin-bottom: 24px;
+
+  span {
+    padding: 4px 12px;
+    border: 1px solid rgba(107,33,214,0.3);
+    border-radius: 50px;
+    font-size: 11px; font-weight: 600;
+    color: #C4A8FF; letter-spacing: .04em;
+  }
+}
+
+.cl-status {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; color: var(--orange);
+  font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase;
+
+  .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--orange);
+    animation: blink 2s infinite;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.cl-plus {
+  font-size: 36px; color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.cl-empty-txt {
+  font-size: 12px; color: var(--muted);
+  letter-spacing: .08em; text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .clientes { padding: 60px 24px; }
+  .cl-header { grid-template-columns: 1fr; gap: 20px; }
+  .cl-grid { grid-template-columns: 1fr; }
+}
